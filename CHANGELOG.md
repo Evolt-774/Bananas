@@ -1,6 +1,6 @@
 # Change Log
 
-## [unreleased]
+## unreleased
 ### added
 ひらがな・カタカナを区別せずとも接続可能に．
 生成したバナナスをtxtファイルに出力．
