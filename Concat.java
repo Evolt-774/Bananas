@@ -4,19 +4,9 @@ public class Concat {
     public void concatBananas(String first, String last){
         String tmp;
         StringBuilder sb = new StringBuilder();
-        if(first == "" || last == ""){
-            System.out.println("error!:空文字です．");
-            return;
-        }
-
-        String firstLast = first.substring(first.length() - 1);
-        String lastFirst = last.substring(0,1);
-
-        if(!firstLast.equals(lastFirst)){
-            System.out.println("error!:文字の前後が等しくありません．");
-            return;
-        }
-
+        Compare cp = new Compare();
+        
+        cp.compareBananas(first, last);
         
         if (first.length() == 1) {
             tmp = last;
