@@ -7,6 +7,7 @@ public class Bananas{
 
         String first, last;
 
+        System.out.println("HELLO!");
         System.out.println("バナナのナス，バナナスを作ります");
         System.out.println("任意のAのBを入力してください");
         System.out.println("[A]");
