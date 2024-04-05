@@ -2,10 +2,9 @@ Bananas
 ====
 
 ## Description
-バナナのナス，バナナス．
-アニメのメカ，アニメカ．
-プールのルール，プールール．
-などの言葉遊びのためのプログラムです．
+バナナのナス，バナナス．  
+アマゾンのゾンビ，アマゾンビ．
+などの言葉遊びを作るためのプログラムです．
 
 ## ChangeLog
 [changelog](https://github.com/Evolt-774/Bananas/blob/main/CHANGELOG.md)

@@ -7,20 +7,23 @@ public class Bananas{
 
         String first, last;
 
-        System.out.println("HELLO!");
         System.out.println("バナナのナス，バナナスを作ります");
         System.out.println("任意のAのBを入力してください");
-        System.out.println("[A]");
+        
         do{
+            System.out.println("[A]");
             first = std.nextLine();
         }while((first == ""));
-        System.out.println("[B]");
+        
         do{
+            System.out.println("[B]");
             last = std.nextLine();
         }while((last == ""));
 
+        std.close();
+        
         cc.concatBananas(first, last);
 
-        std.close();
+        
     }
 }
