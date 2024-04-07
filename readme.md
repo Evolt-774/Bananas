@@ -10,7 +10,7 @@ Bananas
 [changelog](https://github.com/Evolt-774/Bananas/blob/main/CHANGELOG.md)
 
 ## 使用したライブラリ
-ICU4j © 2016-2024 Unicode, Inc.
+[ICU4j](https://icu.unicode.org/download/74)© 2016-2024 Unicode, Inc.
 
 
 ## Author
