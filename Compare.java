@@ -1,3 +1,5 @@
+import com.ibm.icu.text.Transliterator;
+
 public class Compare {
     public int compareBananas(String first, String last){
 
@@ -21,9 +23,14 @@ public class Compare {
         int N = first.length();
         int M = last.length();
         int move = -1;
+        String transFirst, transLast;
         boolean match = true;
+        Transliterator tr = Transliterator.getInstance("Katakana-Hiragana");
 
-        if(first.matches("(\s|　)") || last.matches("(\s|　)")){
+        transFirst = tr.transliterate(first);
+        transLast = tr.transliterate(last);
+
+        if(transFirst.matches("(\s|　)") || transLast.matches("(\s|　)")){
             System.out.println("error!:引数が空白です.");
             System.exit(1);
         }
@@ -38,7 +45,7 @@ public class Compare {
             match = true;
             
             for(int j = 0; j <= i; j++){
-                if(first.charAt((N - 1) - i + j) != last.charAt(j)){
+                if(transFirst.charAt((N - 1) - i + j) != transLast.charAt(j)){
                     
                     match = false;
                     break;
