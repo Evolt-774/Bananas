@@ -7,6 +7,8 @@ public class Bananas{
 
         String first, last;
 
+        String result;
+
         System.out.println("バナナのナス，バナナスを作ります");
         System.out.println("任意のAのBを入力してください");
         
@@ -20,10 +22,18 @@ public class Bananas{
             last = std.nextLine();
         }while((last == ""));
 
-        std.close();
-        
-        cc.concatBananas(first, last);
 
+        
+        result = cc.concatBananas(first, last);
+
+        Output.bananasOutput(result, std);
+
+
+        System.out.println("");
+
+        System.out.println(result);
+
+        System.out.println("");
         
     }
 }

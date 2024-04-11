@@ -18,7 +18,7 @@ public class Compare {
         return 1;
     }
 
-    public int multiCompareBananas(String first, String last) throws IllegalArgumentException{
+    public int multiCompareBananas(String first, String last){
         int count = 0;
         int N = first.length();
         int M = last.length();
