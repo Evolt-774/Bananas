@@ -1,7 +1,7 @@
 
 
 public class Concat {
-    public String concatBananas(String first, String last){
+    public static String concatBananas(String first, String last){
 
         int move = 0;
         String tmp;
